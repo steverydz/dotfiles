@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Install all required snaps
 declare -a snaps=(
   "bitwarden"
