@@ -1,0 +1,8 @@
+# General
+alias g="git"
+alias la="ls -a -ltr"
+
+# Canonical
+alias mshell="lxc exec bionic-maas -- su ubuntu"
+alias mstart="lxc start bionic-maas"
+alias mstop="lxc stop bionic-maas"

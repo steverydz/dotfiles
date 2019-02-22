@@ -1,0 +1,71 @@
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	whitespace = red reverse
+	plain = black
+	meta = cyan
+	frag = magenta bold
+	old = red
+	new = green
+	commit = yellow
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[format]
+	pretty = %C(magenta reverse)%h%Creset %Cgreen[%cr]%Creset %C(bold blue)<%an>%Creset %s
+[alias]
+	s = status -sb
+	c = commit
+	cm = commit -am
+	cp = cherry-pick
+	br = branch
+	bm = branch -m # rename local branch
+	co = checkout
+	df = diff --color --color --color-words --abbrev
+	lo = log --oneline
+	lg = log -p
+	ff = pull --ff-only # get new commits from remote, will fail with local-only commits
+	up = pull --rebase # get new commits from remote, local-only commits will be rebased onto those fetched
+	fm = merge --ff-only --log # get commits from another branch
+	ml = merge --log # will add the short commit messages to the merge commit message
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate # a colourful tree of commits
+	amend = commit --amend -C HEAD # add staged files to previous commit, retainging the original message
+	msg = commit --amend -m # ammend previous commit message
+	cf = show --name-only # e.g. git cf <commit>, show the files changed in a commit
+	p = push
+	po = push origin
+	pf = push --force-with-lease
+	puo = push -u origin # set upstream tracking
+	au = add -u # stages untracked files
+	ignore = update-index --assume-unchanged # ignore changes to a local file
+	unignore = update-index --no-assume-unchanged # no longer ignore changes to a local file
+	ignored = !git ls-files -v | grep "^[[:lower:]]" # list ignored files
+	undopush = push -f origin HEAD^:master
+	sl = shortlog -sn
+	undo = reset --soft HEAD~1
+	branches="for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" # branches:   List all GIT branches with information
+[user]
+	email = steverydz@gmail.com
+	name = Steve Rydz
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[rerere]
+	enabled = 1
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[fetch]
+	prune = true
+[merge]
+	tool = opendiff
+[help]
+	autocorrect = 1
+[log]
+	date = rfc

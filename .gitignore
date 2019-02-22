@@ -1,0 +1,28 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external drives
+.Spotlight-V100
+.Trashes
+
+# NPM
+npm-debug.log
+node_modules/
+
+# Bower
+bower_components/
+
+# Editors/IDEs
+.vscode/
+
+# Sass
+.sass-cache/
+
+# Vim
+.netrwhist
+**/bundle/*

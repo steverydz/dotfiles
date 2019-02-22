@@ -1,0 +1,6 @@
+--ignore-directory=is:node_modules
+--ignore-directory=is:bower_components
+--type-set=styles:ext:css,scss,sass
+--type-set=markdown:ext:md,markdown
+--type-set=js:ext:js,jsx
+--type-set=typescript:ext:ts,tsx
