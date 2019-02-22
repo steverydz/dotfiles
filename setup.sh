@@ -69,6 +69,7 @@ declare -a dotfiles=(
   ".aliases"
   ".gitconfig"
   ".gitignore"
+  ".inputrc"
   ".vimrc"
 )
 
