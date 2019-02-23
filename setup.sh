@@ -66,9 +66,10 @@ git clone git@github.com:steverydz/dotfiles ~/.dotfiles
 
 declare -a dotfiles=(
   ".ackrc"
+  ".aliases"
   ".bash_profile"
   ".bashrc"
-  ".aliases"
+  ".functions"
   ".gitconfig"
   ".gitignore"
   ".inputrc"

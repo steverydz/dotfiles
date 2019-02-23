@@ -3,6 +3,11 @@ if [ -f ~/.aliases ]; then
   [ -r ~/.aliases ] && source ~/.aliases
 fi
 
+# Load functions
+if [ -f ~/.functions ]; then
+  [ -r ~/.functions ] && source ~/.functions
+fi
+
 # Custom bash prompt
 RED="\[\033[0;31m\]"
 GREEN="\[\033[0;32m\]"
@@ -25,7 +30,7 @@ function parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/$(parse_git_dirty)/"
 }
 
-export PS1="\[$RESET\]\[$RED\]➜ \[$RESET\]\[$CYAN\]\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \[$RESET\]\")\$(parse_git_branch) "
+export PS1="\[$RESET\]\[$RED\]➜ \[$RESET\]\[$CYAN\]\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \[$RESET\]\")\$(parse_git_branch)\[$RESET\] "
 
 # Load nvm and nvm bash_completion
 export NVM_DIR="$HOME/.nvm"
