@@ -30,6 +30,7 @@ declare -a apts=(
   "git"
   "python3.6"
   "python3-pip"
+  "tmux"
   "vim"
   "virtualenv"
   "virtualenvwrapper"
@@ -73,6 +74,7 @@ declare -a dotfiles=(
   ".gitconfig"
   ".gitignore"
   ".inputrc"
+  ".tmux.conf"
   ".vimrc"
 )
 
