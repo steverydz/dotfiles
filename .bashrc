@@ -13,15 +13,19 @@ RESET="\033[m"
 
 function parse_git_dirty {
   if [ -d .git ]; then
-    [[ -z $(git status --porcelain) ]] || echo "*"
+    if [[ -z $(git status --porcelain) ]]; then
+      echo -e '\033[0;34m'"git:("'\033[m''\033[031m'"\1"'\033[m''\033[0;34m'")"'\033[m'
+    else
+      echo -e '\033[0;34m'"git:("'\033[m''\033[031m'"\1"'\033[m''\033[0;34m'")"'\033[m''\033[0;33m'"✗"'\033[m'
+    fi
   fi
 }
 
 function parse_git_branch() {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/$(parse_git_dirty)/"
 }
 
-export PS1="\[$GREEN\]\u \[$RESET\]\[$RESET\]\[$CYAN\]\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \[$RESET\]\")\[$RED\]\$(parse_git_branch)\[$RESET\] "
+export PS1="\[$RESET\]\[$RED\]➜ \[$RESET\]\[$CYAN\]\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \[$RESET\]\")\$(parse_git_branch) "
 
 # Load nvm and nvm bash_completion
 export NVM_DIR="$HOME/.nvm"
