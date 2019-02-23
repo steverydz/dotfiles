@@ -1,8 +1,16 @@
-# General
+# Common
+alias l="ls -lFh"     #size,show type,human readable
+alias la="ls -lAFh"   #long list,show almost all,show type,human readable
+alias lr="ls -tRFh"   #sorted by date,recursive,show type,human readable
+alias lt="ls -ltFh"   #long list,sorted by date,show type,human readable
+alias ll="ls -l"      #long list
+alias bashrc="code ~/.bashrc" # Quick access to the ~/.zshrc file
+alias grep="grep --color"
+alias t="tail -f"
 alias g="git"
-alias la="ls -a -ltr"
 
 # Canonical
-alias mshell="lxc exec bionic-maas -- su ubuntu"
-alias mstart="lxc start bionic-maas"
-alias mstop="lxc stop bionic-maas"
+alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
+alias mstart="lxc start bionic-maas" # start lxc container
+alias mstop="lxc stop bionic-maas" # stop lxc container
+alias minfo="lxc info bionic-maas" # info of lxc container
