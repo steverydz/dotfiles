@@ -36,8 +36,3 @@ export PS1="\[$RESET\]\[$RESET\]\[$GREEN\]\w\$([[ -n \$(git branch 2> /dev/null)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-# Load virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/share/virtualenvwrapper/virtualenvwrapper.sh

@@ -30,10 +30,9 @@ declare -a apts=(
   "git"
   "python3.6"
   "python3-pip"
+  "python3-venv"
   "tmux"
   "vim"
-  "virtualenv"
-  "virtualenvwrapper"
   "wget"
   "zsh"
 )
