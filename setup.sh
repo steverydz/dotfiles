@@ -19,15 +19,22 @@ for item in ${snaps[@]}; do
 done
 
 
+# Install Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+
 # Install all required apt packages
 sudo apt-get update
 
 declare -a apts=(
   "ack-grep"
   "bash-complettion"
+  "chrome-gnome-shell"
   "curl"
   "docker-compose"
   "git"
+  "gnome-tweak-tool"
   "python3.6"
   "python3-pip"
   "python3-venv"
@@ -83,8 +90,3 @@ for item in ${dotfiles[@]}; do
 done
 
 source ~/.bashrc
-
-
-# Install Google Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
