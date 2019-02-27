@@ -80,6 +80,7 @@ declare -a dotfiles=(
   ".gitconfig"
   ".gitignore"
   ".inputrc"
+  ".screenlayout"
   ".tmux.conf"
   ".vimrc"
 )

@@ -8,6 +8,7 @@ alias bashrc="code ~/.bashrc" # Quick access to the ~/.zshrc file
 alias grep="grep --color"
 alias t="tail -f"
 alias g="git"
+alias dual=". ~/.screenlayout/dual.sh"
 
 # Canonical
 alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
