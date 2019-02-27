@@ -5,23 +5,22 @@ set -e
 # Install all required snaps
 declare -a snaps=(
   "bitwarden"
-  "firefox"
   "gimp"
   "irccloud-desktop"
+  "journey"
   "lxd"
   "spotify"
-  "vscode --classic"
+  "vscode"
   "vlc"
 )
 
 for item in ${snaps[@]}; do
-  sudo snap install $item
+  if $item == "vscode"
+    sudo snap install $item --classic
+  else
+    sudo snap install $item
+  fi
 done
-
-
-# Install Google Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
 # Install all required apt packages
@@ -29,7 +28,7 @@ sudo apt-get update
 
 declare -a apts=(
   "ack-grep"
-  "bash-complettion"
+  "bash-completion"
   "chrome-gnome-shell"
   "curl"
   "docker-compose"
@@ -66,6 +65,11 @@ sudo apt-get install --no-install-recommends yarn -y
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker ${whoami}
+
+
+# Install Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
 # Clone and symlink dotfiles
