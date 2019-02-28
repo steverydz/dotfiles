@@ -8,6 +8,11 @@ if [ -f ~/.functions ]; then
   [ -r ~/.functions ] && source ~/.functions
 fi
 
+# Load git bash autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # Custom bash prompt
 RED="\[\033[0;31m\]"
 GREEN="\[\033[0;92m\]"

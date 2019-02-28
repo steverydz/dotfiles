@@ -81,6 +81,7 @@ declare -a dotfiles=(
   ".bash_profile"
   ".bashrc"
   ".functions"
+  ".git-completion"
   ".gitconfig"
   ".gitignore"
   ".inputrc"
