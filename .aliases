@@ -11,7 +11,7 @@ alias g="git"
 alias dual=". ~/.screenlayout/dual.sh"
 
 # Canonical
-alias mshell="sudo lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
-alias mstart="sudo lxc start bionic-maas" # start lxc container
-alias mstop="sudo lxc stop bionic-maas" # stop lxc container
-alias minfo="sudo lxc info bionic-maas" # info of lxc container
+alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
+alias mstart="lxc start bionic-maas" # start lxc container
+alias mstop="lxc stop bionic-maas" # stop lxc container
+alias minfo="lxc info bionic-maas" # info of lxc container
