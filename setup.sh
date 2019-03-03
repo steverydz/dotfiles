@@ -28,6 +28,7 @@ sudo apt-get update
 declare -a apts=(
   "ack-grep"
   "bash-completion"
+  "build-essential"
   "chrome-gnome-shell"
   "curl"
   "docker-compose"
@@ -36,11 +37,15 @@ declare -a apts=(
   "python3.6"
   "python3-pip"
   "python3-venv"
+  "ruby-full"
   "tmux"
   "vim"
   "wget"
+  "zlib1g-dev"
   "zsh"
 )
+
+
 
 for item in ${apts[@]}; do
   sudo apt-get install $item -y
