@@ -27,7 +27,6 @@ sudo apt-get update
 
 declare -a apts=(
   "ack-grep"
-  "bash-completion"
   "build-essential"
   "chrome-gnome-shell"
   "curl"
@@ -45,11 +44,13 @@ declare -a apts=(
   "zsh"
 )
 
-
-
 for item in ${apts[@]}; do
   sudo apt-get install $item -y
 done
+
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
 # Install nvm
@@ -81,17 +82,12 @@ git clone git@github.com:steverydz/dotfiles ~/.dotfiles
 
 declare -a dotfiles=(
   ".ackrc"
-  ".aliases"
-  ".bash_profile"
-  ".bashrc"
-  ".functions"
-  ".git-completion"
   ".gitconfig"
   ".gitignore"
-  ".inputrc"
   ".screenlayout"
   ".tmux.conf"
   ".vimrc"
+  ".zshrc"
 )
 
 for item in ${dotfiles[@]}; do
