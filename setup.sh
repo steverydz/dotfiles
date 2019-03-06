@@ -41,6 +41,7 @@ declare -a apts=(
   "tmux"
   "vim"
   "wget"
+  "xclip"
   "zlib1g-dev"
   "zsh"
 )
