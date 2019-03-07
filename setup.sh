@@ -5,7 +5,6 @@ set -e
 # Install all required snaps
 declare -a snaps=(
   "bitwarden"
-  "gimp"
   "irccloud-desktop"
   "journey"
   "lxd"
