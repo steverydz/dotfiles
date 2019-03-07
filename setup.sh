@@ -8,9 +8,7 @@ declare -a snaps=(
   "irccloud-desktop"
   "journey"
   "lxd"
-  "spotify"
   "vscode"
-  "vlc"
 )
 
 for item in ${snaps[@]}; do
