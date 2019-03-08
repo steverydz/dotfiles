@@ -106,7 +106,6 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
 # Custom aliases
-alias dual=". ~/.screenlayout/dual.sh"
 alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
 alias mstart="lxc start bionic-maas" # start lxc container
 alias mstop="lxc stop bionic-maas" # stop lxc container

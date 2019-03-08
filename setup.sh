@@ -83,7 +83,6 @@ declare -a dotfiles=(
   ".ackrc"
   ".gitconfig"
   ".gitignore"
-  ".screenlayout"
   ".tmux.conf"
   ".vimrc"
   ".zshrc"
