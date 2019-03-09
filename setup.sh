@@ -8,6 +8,7 @@ declare -a snaps=(
   "irccloud-desktop"
   "journey"
   "lxd"
+  "spotify"
   "vscode"
 )
 
