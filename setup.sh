@@ -20,12 +20,18 @@ for item in ${snaps[@]}; do
 done
 
 
+# Add charles proxy ppa
+wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -
+sudo sh -c 'echo deb https://www.charlesproxy.com/packages/apt/ charles-proxy main > /etc/apt/sources.list.d/charles.list'
+
+
 # Install all required apt packages
 sudo apt-get update
 
 declare -a apts=(
   "ack-grep"
   "build-essential"
+  "charles-proxy3"
   "chrome-gnome-shell"
   "curl"
   "docker-compose"
