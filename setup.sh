@@ -9,6 +9,7 @@ declare -a snaps=(
   "journey"
   "lxd"
   "spotify"
+  "vlc"
   "vscode"
 )
 
