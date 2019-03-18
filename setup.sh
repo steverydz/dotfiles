@@ -33,7 +33,6 @@ sudo apt-get update
 declare -a apts=(
   "ack-grep"
   "build-essential"
-  "charles-proxy3"
   "chrome-gnome-shell"
   "curl"
   "docker-compose"
@@ -45,8 +44,6 @@ declare -a apts=(
   "tmux"
   "vim"
   "wget"
-  "xclip"
-  "zlib1g-dev"
   "zsh"
 )
 
