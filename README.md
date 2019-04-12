@@ -1,6 +1,6 @@
-# dotfiles
+# Ubuntu dotfiles
 
-These dotfiles are customised for me and the way I work. They enable me to get up and running on a new Ubuntu install. You are free to fork and use them but if you do you're on your own.
+These dotfiles are customised for me for my job at Canonical where I use Ubuntu. They enable me to get up and running on a new Ubuntu install. You are free to fork and use them but if you do you're on your own.
 
 ## How to use
 
