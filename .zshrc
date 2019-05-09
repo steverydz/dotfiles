@@ -110,3 +110,4 @@ alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
 alias mstart="lxc start bionic-maas" # start lxc container
 alias mstop="lxc stop bionic-maas" # stop lxc container
 alias minfo="lxc info bionic-maas" # info of lxc container
+alias doc="documentation-builder" # run documentation builder

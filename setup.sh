@@ -5,6 +5,7 @@ set -e
 # Install all required snaps
 declare -a snaps=(
   "bitwarden"
+  "documentation-builder"
   "irccloud-desktop"
   "journey"
   "lxd"
