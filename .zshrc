@@ -106,8 +106,12 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
 # Custom aliases
-alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into lxc container
-alias mstart="lxc start bionic-maas" # start lxc container
-alias mstop="lxc stop bionic-maas" # stop lxc container
-alias minfo="lxc info bionic-maas" # info of lxc container
+alias mshell="lxc exec bionic-maas -- su ubuntu" # ssh into maas lxc container
+alias mstart="lxc start bionic-maas" # start maas lxc container
+alias mstop="lxc stop bionic-maas" # stop maas lxc container
+alias minfo="lxc info bionic-maas" # info of maas lxc container
+alias rshell="lxc exec bionic-rbac -- su ubuntu" # ssh into rbac lxc container
+alias rstart="lxc start bionic-rbac" # start rbac lxc container
+alias rstop="lxc stop bionic-rbac" # stop rbac lxc container
+alias rinfo="lxc info bionic-rbac" # info of rbac lxc container
 alias doc="documentation-builder" # run documentation builder
