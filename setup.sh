@@ -5,20 +5,21 @@ set -e
 # Install all required snaps
 declare -a snaps=(
   "bitwarden"
-  "documentation-builder"
+  "code"
+  "firefox"
   "irccloud-desktop"
   "journey"
   "lxd"
-  "spotify"
   "vlc"
-  "vscode"
 )
 
 for item in ${snaps[@]}; do
-  if $item == "vscode"
-    sudo snap install $item --classic
+  if $item == "code"
+    snap install $item --classic
+  elif $item == "irccloud"
+    snap install $item --edge
   else
-    sudo snap install $item
+    snap install $item
   fi
 done
 
