@@ -2,10 +2,22 @@
 
 These dotfiles are customised for me for my job at Canonical where I use Ubuntu. They enable me to get up and running on a new Ubuntu install. You are free to fork and use them but if you do you're on your own.
 
-## How to use
+## Packages to install
 
-1. Save the [setup script](https://raw.githubusercontent.com/steverydz/dotfiles/master/setup.sh) to your local machine
-1. Make sure it is executable: `sudo chmod +x setup.sh`
-1. Run the script: `./setup.sh`
+```
+build-essential
+curl
+docker-compose
+git
+python3.6
+python3-pip
+python3-venv
+tmux
+vim
+wget
+zsh
+xclip
+```
 
-You will be prompted for your password for commands that use `sudo`.
+## Install tmux package manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
