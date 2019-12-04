@@ -15,3 +15,7 @@ filetype plugin indent on
 
 " Enable line numbers
 set number
+
+" Set tab width
+set tabstop=2
+set shiftwidth=2
