@@ -49,9 +49,6 @@
 	sl = shortlog -sn
 	undo = reset --soft HEAD~1
 	branches="for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" # branches:   List all GIT branches with information
-[user]
-	email = steverydz@gmail.com
-	name = Steve Rydz
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
