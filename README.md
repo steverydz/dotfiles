@@ -49,7 +49,7 @@ alias pbcopy="xclip -sel clip"
 
 ## Setup VSCode
 
-TBC
+[Settings sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
 ## Disable emoji keyboard
 
