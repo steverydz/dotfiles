@@ -36,6 +36,14 @@ Add this to `~/.zshrc`
 alias pbcopy="xclip -sel clip"
 ```
 
+## Add Docker group
+
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
 ## SSH key
 
 [Generate SSH key for github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
