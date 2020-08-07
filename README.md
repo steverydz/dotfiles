@@ -5,7 +5,7 @@ These dotfiles are customised for me. You are welcome to use them but I do not o
 ## Packages to install
 
 ```
-sudo apt update && sudo apt install curl docker-compose git gnome-tweaks net-tools python3-pip python3-venv tmux vim wget zsh xclip -y
+sudo apt update && sudo apt install build-essential curl docker-compose git gnome-tweaks net-tools python3-pip python3-venv tmux vim wget zsh xclip -y
 ```
 
 ## Snaps to install
@@ -20,13 +20,30 @@ snap install dotrun
 
 [Download Google Chrome](https://www.google.co.uk/chrome/)
 
-## Install tmux package manager
+## SSH key
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+[Generate SSH key for github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ## Copy dotfiles to home directory
 
 See [setup.sh](setup.sh)
+
+## Install tools
+
+- [Install oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [Install nvm](https://github.com/nvm-sh/nvm)
+- [Install yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
+- [Install nordvpn](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+
+## Install pyenv
+
+[pyenv installer](https://github.com/pyenv/pyenv-installer)
+
+## Install tmux package manager
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 ## xclip alias
 
@@ -44,17 +61,6 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-## SSH key
-
-[Generate SSH key for github](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
-## Install tools
-
-- [Install oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [Install nvm](https://github.com/nvm-sh/nvm)
-- [Install yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
-- [Install nordvpn](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
-
 ## Setup VSCode
 
 [Settings sync extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
@@ -64,6 +70,11 @@ newgrp docker
 1. Go to Settings > Language and Region
 2. Click "Manage Installed Languages"
 3. Change "Keyboard input method system" to "XIM"
+
+## Set capslock as additional esc
+
+1. Go to Tweaks > Keyboard & Mouse > Additional Layout Options > Caps Lock Behaviour
+2. Click "Make Caps Lock an additional Esc"
 
 ## Settings
 
