@@ -14,6 +14,7 @@ sudo apt update && sudo apt install build-essential curl docker-compose git gnom
 snap install bitwarden
 snap install code --classic
 snap install dotrun
+snap install todoist
 ```
 
 ## Install Google Chrome
