@@ -80,3 +80,7 @@ newgrp docker
 ## Settings
 
 Use system settings and Gnome Tweaks to make settings adjustments accordingly
+
+## Other apps
+
+- [uLauncher](https://ulauncher.io/)
